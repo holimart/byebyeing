@@ -1,0 +1,22 @@
+[project]
+name = "byebyeing"
+version = "0.1.0"
+description = "OpenAI-compatible gateway that keeps Qwen3.8-Flash-Next agents on task (no Alibaba URLs, uploads, metadata probes or privilege workarounds)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+experiments = ["pyarrow", "huggingface_hub"]
+
+[project.scripts]
+byebyeing = "byebyeing.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["byebyeing"]

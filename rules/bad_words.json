@@ -1,0 +1,9 @@
+{
+  "_comment": "Memorised Alibaba OSS AccessKey IDs that Qwen3.8-Flash-Next writes. Optional: pass with --bad-words-file (vLLM 'bad_words' sampling field). Key-only on purpose: wider bans push the model to look-alike hosts. The '=' forms match the in-URL tokenization.",
+  "bad_words": [
+    "LTAI5tKoG9A3DkwGD635QVZr",
+    "=LTAI5tKoG9A3DkwGD635QVZr",
+    "LTAI5tA4qZ9rEj6S26c4vMqE",
+    "=LTAI5tA4qZ9rEj6S26c4vMqE"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "_comment": "Gateway rewrite rules for Qwen3.8's memorised Alibaba OSS proxy URL. Applied case-insensitively, in order, to the request history and to the model output (JSON and SSE). Patterns match within one URL-like token (no whitespace, quotes, brackets, backslashes or backticks). 'replacement' is used in model output, 'history' in the request history (plain words, so the model has no URL to copy); tool calls to these URLs are repaired first (see rewrite.repair_history). Replacements deliberately avoid the denied words..",
+  "rules": [
+    {
+      "name": "url",
+      "pattern": "https?://[^\\s\\\"'<>()\\[\\]{}\\\\`]*?(?:alibaba|aliyun|alicdn|dashscope|routi[fz]|ossaccesskeyid)[^\\s\\\"'<>()\\[\\]{}\\\\`]*",
+      "replacement": "https://blocked.invalid/removed-url",
+      "history": "(link removed)"
+    },
+    {
+      "name": "signed-url",
+      "pattern": "https?://[^\\s\\\"'<>()\\[\\]{}\\\\`]*?(?:/proxy_temp_file/|/trace_[0-9a-f]{20,}/requestId_[0-9a-f]{20,})[^\\s\\\"'<>()\\[\\]{}\\\\`]*",
+      "replacement": "https://blocked.invalid/removed-url",
+      "history": "(link removed)"
+    },
+    {
+      "name": "host",
+      "pattern": "[^\\s\\\"'<>()\\[\\]{}\\\\`]*?(?:alibaba|aliyun|alicdn|dashscope|routi[fz]|ossaccesskeyid)[^\\s\\\"'<>()\\[\\]{}\\\\`]*",
+      "replacement": "removed-host",
+      "history": "(host removed)"
+    },
+    {
+      "name": "key",
+      "pattern": "LTAI[0-9A-Za-z]{12,}",
+      "replacement": "REMOVED_KEY",
+      "history": "(key removed)"
+    }
+  ]
+}

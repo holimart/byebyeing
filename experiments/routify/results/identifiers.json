@@ -1,0 +1,17 @@
+{
+  "alibaba_key": {
+    "LTAI5tKoG9A3DkwGD635QVZr": 63
+  },
+  "aliyuncs_host": {
+    "routify-file-proxy-sg.oss-ap-southeast-1.aliyuncs.com": 82,
+    "routify-file-proxy-sg.ap-southeast-1.oss.aliyuncs.com": 4,
+    "routify-file-proxy-sg.ap-southeast-1.aliyuncs.com": 3,
+    "routify-file-proxy-sg.oss-accelerate.aliyuncs.com": 1
+  },
+  "gateway_removed_alibaba_key": {
+    "LTAI5tKoG9A3DkwGD635QVZr": 1
+  },
+  "gateway_removed_aliyuncs_host": {
+    "routify-file-proxy-sg.oss-ap-southeast-1.aliyuncs.com": 1
+  }
+}
