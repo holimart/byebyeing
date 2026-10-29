@@ -1,0 +1,18 @@
+{
+ "alibaba_access_key_ids": {
+  "LTAI5tKoG9A3DkwGD635QVZr": 1
+ },
+ "aliyuncs_hosts": {
+  "routify-file-proxy-sg.oss-ap-southeast-1.aliyuncs.com": 46,
+  "sanmaohe.oss-cn-beijing.aliyuncs.com": 22,
+  "routify-files.oss-cn-beijing.aliyuncs.com": 1,
+  "vinamrakar.oss-cn-hangzhou.aliyuncs.com": 1,
+  "oss-cn-beijing.aliyuncs.com": 1
+ },
+ "other_cloud_bucket_hosts": {
+  "s3.amazonaws.com": 2,
+  "storage.googleapis.com": 2,
+  "eval-env-aws.s3.us-east-1.amazonaws.com": 1
+ },
+ "_note": "Counts of matches in model output (raw completions, and next-turn commands, reasoning and text of the chat runs). The trace's own bucket host is in every chat prompt, so the model often repeats it in later turns."
+}
